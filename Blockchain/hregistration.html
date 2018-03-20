@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<title>Hospital Regisitration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<head>
+	<style>
+		#bb{
+		margin:30px 100px 30px 100px;
+		}
+	</style>
+	</head>
+<body>
+	<div style="float:center">
+		<div class="w3-card-4" id="bb" >
+			<header class="w3-container w3-center w3-teal">
+				<h1>Hospital Form</h1>
+			</header>
+
+		    <div class="w3-container">
+				<form class="w3-container" action="register" method="post">
+					<br><h3><b>Hospital Details</b></h3><hr>
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Hospital Name<font color="red"> *</font></label>
+								<input class="w3-input" type="text" name="hospital_name" required>
+							</div>
+						</div>
+					</p>
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+							<label>Postal Address<font color="red"> *</font></label>
+						</div><br>
+						<div class="w3-row-padding">
+							<div class="w3-half">
+								<label>Street</label>
+								<textarea class="w3-input" rows="1" cols="35" name="street" required></textarea>
+							</div>
+							<div class="w3-half">
+								<label>City</label>
+								<input class="w3-input" type="text" name="city" required>
+							</div>
+						</div>
+						<div class="w3-row-padding">
+							<div class="w3-half">
+								<label>State</label>
+								<input class="w3-input" type="text" name="state" required>
+							</div>
+							<div class="w3-half">
+								<label>Pincode</label>
+								<input class="w3-input" type="number" name="pin" required>
+							</div>
+						</div>
+						</div>
+						
+					</p>
+					
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Primary Contact No.<font color="red"> *</font></label>
+						<input class="w3-input" type="number" name="pno" required>
+						</div>
+						</div>
+					</p>
+
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Secondary Contact No.</font></label>
+						<input class="w3-input" type="number" name="sno">
+						</div>
+						</div>
+					</p>
+
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Email contact<font color="red"> *</font></label>
+						<input class="w3-input" type="email" name="email_id" required>
+						</div>
+						</div>
+					</p>
+
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Hospital Registration No.<font color="red"> *</font></label>
+						<input class="w3-input" type="text" name="hr_no" required>
+						</div>
+						</div>
+					</p>
+
+					
+
+					<br>
+					
+					<p >
+						<button class="w3-button w3-block w3-teal"><h4>Submit</h4>
+						</button>
+					</p><br><br>
+
+				
+				</form>
+		    </div>
+  		</div>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<title>Patient Regisitration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<head>
+	<style>
+		#bb{
+		margin:30px 100px 30px 100px;
+		}
+	</style>
+	</head>
+<body>
+	<div style="float:center">
+		<div class="w3-card-4" id="bb" >
+			<header class="w3-container w3-center w3-teal">
+				<h1>Patient Diagnosis Form</h1>
+			</header>
+
+		    <div class="w3-container">
+				<form class="w3-container" action="http://localhost:1200/Blockchain/get_patient_info">
+					<br><h3><b>Patient's Details</b></h3><hr>
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>First Name<font color="red"> *</font></label>
+								<input class="w3-input" type="text" name="first_name" required>
+							</div>
+							<div class="w3-row-padding">
+								<label>Last Name<font color="red"> *</font></label>
+								<input class="w3-input" type="text" name="last_name">
+							</div>
+						</div>
+					</p>
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+							<label>Aadhar number<font color="red"> *</font></label>
+							<input class="w3-input" type="text" name="aadhar" required>
+						</div></div>
+					</p>
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Age<font color="red"> *</font></label>
+						<input class="w3-input" type="text" name="age" required>
+						</div>
+						</div></p>
+					<p>
+						<div class="w3-row-padding">
+						<div class="w3-row-padding">
+						<label>Contact No.<font color="red"> *</font></label>
+						<input class="w3-input" type="text" name="cno" required>
+						</div>
+						</div></p>
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Marital status<font color="red"> *</font></label>
+								<input type="radio" name="marital_status" value="married" checked> Married</input>
+		  						 <input type="radio" name="marital_status" value="unmarried"> Unmarried<br>
+							</div>
+						</div>
+					</p>
+
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Obstatic History(OBH)<font color="red"> *</font></label>
+								<textarea class="w3-input" rows="4" cols="50" name="obh" required></textarea>
+							</div>
+						</div>
+					</p>
+					
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Menstural History(M.H)<font color="red"> *</font></label>
+								<input class="w3-input" type="text" placeholder="LMD" name="lmd" required>
+								<input class="w3-input" type="text" placeholder="EDD" name="edd" required>
+							</div>
+						</div>
+					</p>
+					
+					
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Urine Pregnancy Test<font color="red"> *</font></label>
+								 <input type="radio" name="gender" value="positive" name="upt" checked> positive</input>
+		  						 <input type="radio" name="gender" value="negative" name="upt"> negative<br>
+							</div>
+						</div>
+					</p>
+					
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Ultrasound report<font color="red"> *</font></label>
+								<input class="w3-input" type="text" name="urn" placeholder="Ultrasound Registration number" required>
+								<input class="w3-input" type="text" name="ulmd" placeholder="LMD" required>
+								<textarea class="w3-input" rows="4" cols="50" name="anomalies" placeholder="Anomalies of the baby" required></textarea>
+							</div>
+						</div>
+					</p>
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Other investigation report</label>
+								<textarea class="w3-input" rows="4" name="inv_rep" cols="50"></textarea>
+							</div>
+						</div>
+					</p>
+
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Patient medical history(if any)</label>
+								<textarea class="w3-input" rows="4" cols="50" name="med_his" placeholder="Disease history"></textarea>
+							</div>
+						</div>
+					</p>
+
+
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Delivery Status</label>
+								<input type="radio" name="deliverystatus" name="del_status" value="born">Born
+								<input type="radio" name="deliverysatus" name="del_status" value="abortion">Abortion 
+								<textarea class="w3-input" rows="4" cols="50" name="o_info" placeholder="Any Other delivery related information"></textarea>
+							</div>
+						</div>
+					</p>
+
+
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Diagnosed By<font color="red"> *</font></label>
+								<input class="w3-input" type="text" name="d_by_name" placeholder="Name of medical practitioner" required>
+								<input class="w3-input" type="text" name="d_by_rno" placeholder="Medical Registration number" required>
+							</div>
+						</div>
+					</p>
+					<p>
+						<div class="w3-row-padding">
+							<div class="w3-row-padding">
+								<label>Diagnosed at<font color="red"> *</font> </label>
+								<input class="w3-input" type="text" name="d_at_name" placeholder="Name of Clinic/Nursing home/Hospital" required></input>
+								<input class="w3-input" type="text"name="hrno"  placeholder="Hospital Registration number" required>
+							</div>
+						</div>
+					</p>
+
+					<br>
+					
+					<p >
+						<button class="w3-teal w3-block w3-button"><h4>Submit</h4>
+						</button>
+					</p><br><br>
+
+				
+				</form>
+		    </div>
+  		</div>
+  </div>
+
+</body>
+</html>
+

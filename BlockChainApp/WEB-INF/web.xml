@@ -1,0 +1,19 @@
+<web-app>
+	<servlet>
+		<servlet-name>patient_block_chain</servlet-name>
+		<servlet-class>Block_Chain</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>patient_block_chain</servlet-name>
+		<url-pattern>/patient_block_chain</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Traversal_block</servlet-name>
+		<servlet-class>Traversal_block</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Traversal_block</servlet-name>
+		<url-pattern>/traversal_block</url-pattern>
+	</servlet-mapping>
+</web-app>
